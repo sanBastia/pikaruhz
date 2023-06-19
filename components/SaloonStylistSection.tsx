@@ -118,24 +118,15 @@ const SaloonStylistSection = () => {
           </h2>
           <span className='block justify-end text-gray-400 text-sm pt-2'>Lihat semua</span>
           </div>
-          <div className="grid gap-2 row-gap-2 mx-auto sm:row-gap-10 lg:max-width sm:grid-cols-2 lg:grid-cols-4">
-            {/* ini dari hyperdev ui */}
-            {/* <div className="flex">
-              <img
-                className="object-cover w-20 h-20 mr-4 rounded-full shadow"
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
-                alt="Person"
-              />
-              <div className="flex flex-col justify-center">
-                <p className="text-lg font-bold">Oliver Aguilerra</p>
-                <p className="text-sm text-gray-800">Product Manager</p>
-              </div>
-            </div> */}
-
-             {/* ini dari kometa > pricing */}
+          {/* <div className="grid gap-2 row-gap-2 mx-auto sm:row-gap-10 lg:max-width sm:grid-cols-2 lg:grid-cols-4">
+          
              {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
-            
-    
+        </div> */}
+
+<div className="relative overflow-hidden">
+      <div className="flex overflow-x-auto scroll-smooth space-x-8 space-y-4 p-2 h-full w-full">
+      {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
+        </div>
         </div>
         </div>
       );

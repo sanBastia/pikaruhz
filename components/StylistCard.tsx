@@ -18,7 +18,7 @@ const StylistCard = ({stylistName, pic, rating, services}: StylistCardProps) => 
     <div className="mb-6">
       <div className="flex items-center justify-between pb-2 mb-2 border-b">
         <div>
-          <p className="text-xl font-bold tracking-wider uppercase">
+          <p className="text-sm lg:text-xl font-bold tracking-wider uppercase">
             {stylistName}
           </p>
           <span className='inline-flex gap-2'>
@@ -28,7 +28,7 @@ const StylistCard = ({stylistName, pic, rating, services}: StylistCardProps) => 
         </div>
         <div className="flex items-center justify-center w-40 h-40 rounded-full bg-blue-gray-50">
         <img
-                className="object-cover mr-4 w-40 h-40 rounded-full shadow"
+                className="object-cover mr-4 w-28 h-28 lg:w-40 lg:h-40  rounded-full shadow"
                 src={pic}
                 alt="Person"
               />
