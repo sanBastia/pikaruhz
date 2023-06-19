@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard'
 
 const dataServices = [
     {
-        serviceName: 'kreatin Treatment FREE HAIR COLORING',
+        serviceName: 'kreatin Treatment(FREE HAIR COLORING)',
         location: 'Mangga Besar',
         price: '240.000',
         duration: '40min',
