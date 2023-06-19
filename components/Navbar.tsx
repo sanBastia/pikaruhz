@@ -25,7 +25,7 @@ const Navbar = () => {
     //     </nav>
     // </header>
 
-<div className="max-width px-4 py-2 mx-auto sm:px-6 lg:px-8 sticky top-0 z-50 bg-white shadow-md rounded">
+<div className="max-width px-4 py-2 mx-auto h-[80px] sm:px-6 lg:px-8 sticky top-0 z-50 bg-white shadow-md rounded">
 <div className="relative flex items-center justify-between">
   <div className="flex items-center">
     {/* <a
@@ -35,7 +35,7 @@ const Navbar = () => {
       className="inline-flex items-center mr-8"
     > */}
     <Link href='/' className="flex justify-center items-center mr-8">
-          <Image src='/logo.png' alt="car hub logo" width={90} height={20} className="object-contain" />
+          <Image src='/logo.png' alt="car hub logo" width={70} height={70} className="object-contain" />
     </Link>
     {/* </a> */}
     <ul className="flex items-center hidden space-x-8 lg:flex">
