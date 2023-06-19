@@ -36,11 +36,11 @@ const dataStylist = [
         rating: '3.0',
         services: [
             {
-            name: 'cutting',
-            icon: <ScissorsIcon size={20} />
-            },
+                name: 'Cutting',
+                icon: <ScissorsIcon size={20} />
+                },
             {
-                name: 'coloring',
+                name: 'Coloring',
                 icon: <Paintbrush2Icon size={20} />
             },
             {
@@ -59,11 +59,11 @@ const dataStylist = [
         rating: '4.0',
         services: [
             {
-            name: 'cutting',
+            name: 'Cutting',
             icon: <ScissorsIcon size={20} />
             },
             {
-                name: 'coloring',
+                name: 'Coloring',
                 icon: <Paintbrush2Icon size={20} />
             },
             {
@@ -82,11 +82,11 @@ const dataStylist = [
         rating: '5.0',
         services: [
             {
-                name: 'cutting',
+                name: 'Cutting',
                 icon: <ScissorsIcon size={20} />
             },
             {
-                name: 'coloring',
+                name: 'Coloring',
                 icon: <Paintbrush2Icon size={20} />
             },
             {
@@ -94,12 +94,12 @@ const dataStylist = [
                 icon: <ForwardIcon size={20} />
             },
             {
-                name: 'BSD',
-                icon: <MapPinIcon size={20} />
-            },
-            {
                 name: 'Oil treatment',
                 icon: <DropletIcon size={20} />
+            },
+            {
+                name: 'BSD',
+                icon: <MapPinIcon size={20} />
             },
 
     ]
@@ -124,7 +124,7 @@ const SaloonStylistSection = () => {
         </div> */}
 
 <div className="relative overflow-hidden">
-      <div className="flex overflow-x-auto scroll-smooth space-x-8 space-y-4 p-2 h-full w-full">
+      <div className="flex overflow-x-auto scroll-smooth space-x-8 p-4 h-full w-full">
       {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
         </div>
         </div>
