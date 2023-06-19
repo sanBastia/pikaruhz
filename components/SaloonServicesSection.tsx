@@ -51,7 +51,7 @@ const SaloonServicesSection = () => {
           </p> */}
         </header>
 
-        <ul className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
+        {/* <ul className="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-4">
           
             {dataServices.map((service)=>(
                 <li key={service.serviceName}>
@@ -64,7 +64,26 @@ const SaloonServicesSection = () => {
                 />
                 </li>
             ))}
-        </ul>
+        </ul> */}
+      <div className="relative overflow-hidden">
+      <div className="flex overflow-x-auto scroll-smooth space-x-8 space-y-4 p-2 h-full w-full">
+          
+          {dataServices.map((service)=>(
+              <div key={service.serviceName}>
+              <ServiceCard 
+              serviceName={service.serviceName}
+              location={service.location}
+              price={service.price}
+              duration= {service.duration}
+              img={service.img}
+              />
+              </div>
+          ))}
+      </div>
+      </div>
+     
+      
+      
       </div>
   </section>
   )
