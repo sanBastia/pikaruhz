@@ -40,24 +40,24 @@ const Navbar = () => {
     {/* </a> */}
     <ul className="flex items-center hidden space-x-8 lg:flex">
       <li>
-        <a
-          href="/"
+        <Link
+          href="/pelayanankami"
           aria-label="Our product"
           title="Our product"
           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
         >
           Pelayanan kami
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          href="/"
+        <Link
+          href="/stylistkami"
           aria-label="Our product"
           title="Our product"
           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
         >
-          Tentang Kami
-        </a>
+          Stylist kami
+        </Link>
       </li>
       <li>
         <a
@@ -165,14 +165,24 @@ const Navbar = () => {
           <nav>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="/"
+                <Link
+                  href="/pelayanankami"
                   aria-label="Our product"
                   title="Our product"
                   className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
                 >
                   Pelayanan kami
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/stylistkami"
+                  aria-label="Our product"
+                  title="Our product"
+                  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
+                >
+                  Stylist kami
+                </Link>
               </li>
               <li>
                 <a
@@ -182,16 +192,6 @@ const Navbar = () => {
                   className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
                 >
                   
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/"
-                  aria-label="Product pricing"
-                  title="Product pricing"
-                  className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-brand-hover"
-                >
-                  Tentang kami
                 </a>
               </li>
               <li>

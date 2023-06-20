@@ -55,12 +55,12 @@ const ServiceCard = ({serviceName, location, price,duration,img}: ServiceCardPro
                 <p className="font-medium">{duration}</p>
                 </div>
             </div>
-            <div className='shrink-0'>
+           
                     <CustomButton 
                     title='Book'
                     containerStyle='bg-brand w-full hover:bg-brand-hover' 
                     textStyles='text-white'/>
-            </div>
+            
             </div>
         </div>
         </div >

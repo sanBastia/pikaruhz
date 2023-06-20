@@ -1,5 +1,6 @@
 import React from 'react'
 import ServiceCard from './ServiceCard'
+import Link from 'next/link'
 
 const dataServices = [
     {
@@ -42,7 +43,7 @@ const SaloonServicesSection = () => {
           <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
             Pelayanan kami 
           </h2>
-          <span className='block justify-end text-gray-400 text-sm pt-2'>Lihat semua</span>
+          <Link href="/pelayanankami" className='block justify-end text-gray-400 text-sm pt-2'>Lihat semua</Link>
           </div>
           
 

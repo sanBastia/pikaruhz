@@ -1,6 +1,7 @@
 import React from 'react'
 import StylistCard from './StylistCard';
 import { DropletIcon, ForwardIcon,  MapPinIcon, Paintbrush2Icon, ScissorsIcon, VenetianMaskIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const dataStylist = [
     {
@@ -104,8 +105,6 @@ const dataStylist = [
 
     ]
     },
-
-
 ]
 
 
@@ -116,17 +115,17 @@ const SaloonStylistSection = () => {
           <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
             Hair Stylist kami
           </h2>
-          <span className='block justify-end text-gray-400 text-sm pt-2'>Lihat semua</span>
+          <Link href='/stylistkami' className='block justify-end text-gray-400 text-sm pt-2'>Lihat semua</Link>
           </div>
           {/* <div className="grid gap-2 row-gap-2 mx-auto sm:row-gap-10 lg:max-width sm:grid-cols-2 lg:grid-cols-4">
           
              {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
         </div> */}
 
-<div className="relative overflow-hidden">
-      <div className="flex overflow-x-auto scroll-smooth space-x-8 p-4 h-full w-full">
-      {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
-        </div>
+        <div className="relative overflow-hidden">
+            <div className="flex overflow-x-auto scroll-smooth space-x-8 p-4 h-full w-full">
+                {dataStylist.map((stylist)=>(<StylistCard stylistName={stylist.stylistName} pic={stylist.pic} rating={stylist.rating} services={stylist.services} />))}
+            </div>
         </div>
         </div>
       );
