@@ -1,6 +1,7 @@
 import React, { ReactComponentElement } from 'react'
 import CustomButton from './CustomButton'
 import { StarIcon } from 'lucide-react'
+import Link from 'next/link';
 
 interface StylistCardProps {
   stylistName: string,
@@ -52,6 +53,7 @@ const StylistCard = ({stylistName, pic, rating, services}: StylistCardProps) => 
       </div>
     </div>
     <div>
+    <Link href='/book'>
             <CustomButton 
                     title='Book'
                     containerStyle='bg-brand w-full hover:bg-brand-hover' 
@@ -59,6 +61,7 @@ const StylistCard = ({stylistName, pic, rating, services}: StylistCardProps) => 
       <p className="text-sm text-gray-500 italic">
         *segala kejadian yang terjadi menjadi tanggung jawab Stylist dengan pelanggan
       </p>
+      </Link>
     </div>
        </div>
   )

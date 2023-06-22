@@ -1,6 +1,7 @@
 import React from 'react'
 import { MapPinIcon, TimerIcon } from 'lucide-react'
 import CustomButton from './CustomButton'
+import Link from 'next/link'
 
 interface ServiceCardProps  {
     serviceName: string,
@@ -55,12 +56,12 @@ const ServiceCard = ({serviceName, location, price,duration,img}: ServiceCardPro
                 <p className="font-medium">{duration}</p>
                 </div>
             </div>
-           
+           <Link href='/book'>
                     <CustomButton 
                     title='Book'
                     containerStyle='bg-brand w-full hover:bg-brand-hover' 
                     textStyles='text-white'/>
-            
+            </Link>
             </div>
         </div>
         </div >

@@ -3,6 +3,7 @@
 
 import Image from "next/image"
 import CustomButton from "./CustomButton"
+import Link from "next/link"
 
 const Hero = () => {
     const handleScroll = () => {}
@@ -118,20 +119,19 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex flex-col items-center md:flex-row">
-            <a
-              href="/"
+            <Link
+              href="/book"
               className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-brand hover:bg-brand-hover focus:shadow-outline focus:outline-none"
             >
               <span className="text-xl">Book</span>
         
-            </a>
-            <a
-              href="/"
+            </Link>
+            <span
               aria-label=""
               className="inline-flex items-center font-semibold text-red-500 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               Get 15% discount
-            </a>
+            </span>
           </div>
         </div>
         <div className="relative w-full lg:w-1/2">
