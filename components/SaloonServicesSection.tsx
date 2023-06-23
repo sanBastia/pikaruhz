@@ -67,7 +67,7 @@ const SaloonServicesSection = () => {
             ))}
         </ul> */}
       <div className="relative overflow-hidden">
-      <div className="flex overflow-x-auto scroll-smooth space-x-8 p-2 h-full w-full">
+      <div className="flex overflow-x-auto scroll-smooth space-x-6 p-2 h-full w-full">
           
           {dataServices.map((service)=>(
               <div key={service.serviceName}>

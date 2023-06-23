@@ -36,7 +36,7 @@ const ServiceCard = ({serviceName, location, price,duration,img}: ServiceCardPro
             </div>
             </dl>
 
-            <div className="mt-6 flex items-center gap-4 text-xs">
+            <div className="mt-6 flex items-center justify-between gap-2 text-xs">
             <div className="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
             <MapPinIcon size={20} />
 
@@ -56,12 +56,15 @@ const ServiceCard = ({serviceName, location, price,duration,img}: ServiceCardPro
                 <p className="font-medium">{duration}</p>
                 </div>
             </div>
-           <Link href='/book'>
+            <div>
+            <Link href='/book' className='grow'>
                     <CustomButton 
                     title='Book'
-                    containerStyle='bg-brand w-full hover:bg-brand-hover' 
+                    containerStyle='bg-brand hover:bg-brand-hover' 
                     textStyles='text-white'/>
             </Link>
+            </div>
+         
             </div>
         </div>
         </div >
